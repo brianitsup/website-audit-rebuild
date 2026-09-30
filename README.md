@@ -1,31 +1,27 @@
 # website-audit-rebuild
 
-A Claude skill that audits an existing publicly accessible website and produces a complete redevelopment package:
+An [Agent Skill](https://agentskills.io) for Claude, Codex CLI, Gemini CLI, Cursor, opencode and other harnesses that read `SKILL.md`.
 
-- Website, feature, and content inventories + current-state sitemap
-- 11-area audit (UI, UX, mobile, accessibility, performance, SEO, security, branding, content, architecture, analytics)
-- Owner-facing audit report with prioritised findings and phases
-- Developer-facing redevelopment specification with content migration plan and 301 redirect map
-- Concise (≤3 A4 pages) redevelopment proposal with conservative timeline and budget
+Audit an existing publicly accessible website and produce a complete redevelopment plan — page/content/feature inventory, sitemap, multi-area audit (UI, UX, mobile, accessibility, performance, SEO, security, branding, content, architecture, analytics), a client-facing audit report, a technical redevelopment specification with content migration plan, and a concise (≤3 page) redevelopment proposal with tasks, conservative timeline and budget, and recommended tech stack. Use this skill whenever the user asks to audit, review, analyze, assess, redesign, rebuild, modernize, migrate, or "look at" an existing website or URL; wants a website proposal, quote, or scope for improving a client's site; asks "what's wrong with this site"; or wants to document a site before redeveloping it. Trigger even if the user only pastes a URL and asks for feedback on the site.
 
-## Structure
-
-```
-SKILL.md                          # Workflow: scope → crawl → audit → deliverables
-references/
-├── audit-checklists.md           # Per-area audit checklists + severity guidance
-├── report-template.md            # Owner-facing audit report structure
-├── spec-template.md              # 19-section developer specification
-└── proposal-template.md          # ≤3-page proposal with budget/timeline rules
-```
-
-## Principles
-
-Public content only · respects robots.txt and rate limits · documents rather than copies · every claim labeled Confirmed / Inferred / To-confirm · never invents prices or performance scores.
 
 ## Install
 
-Package with the skill-creator's `package_skill.py` (or zip the folder as `.skill`) and save it to your Claude profile, or use it directly in Claude Code.
+With the [skills CLI](https://github.com/vercel-labs/skills):
 
----
-Maintained by Brian Mangi — ITSUP Ltd, Honiara, Solomon Islands.
+```bash
+npx skills add brianitsup/website-audit-rebuild
+```
+
+Manually (user scope for Codex, Gemini, Cursor, opencode):
+
+```bash
+git clone https://github.com/brianitsup/website-audit-rebuild.git ~/my-skills/website-audit-rebuild
+ln -s ../../my-skills/website-audit-rebuild ~/.agents/skills/website-audit-rebuild
+```
+
+For Claude, upload the folder as a skill in Settings → Capabilities, or place it in `~/.claude/skills/website-audit-rebuild` for Claude Code.
+
+## License
+
+MIT
