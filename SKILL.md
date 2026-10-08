@@ -1,6 +1,6 @@
 ---
 name: website-audit-rebuild
-description: Audit an existing publicly accessible website and produce a complete redevelopment plan — page/content/feature inventory, sitemap, multi-area audit (UI, UX, mobile, accessibility, performance, SEO, security, branding, content, architecture, analytics), a client-facing audit report, a technical redevelopment specification with content migration plan, and a concise (≤3 page) redevelopment proposal with tasks, conservative timeline and budget, and recommended tech stack. Use this skill whenever the user asks to audit, review, analyze, assess, redesign, rebuild, modernize, migrate, or "look at" an existing website or URL; wants a website proposal, quote, or scope for improving a client's site; asks "what's wrong with this site"; or wants to document a site before redeveloping it. Trigger even if the user only pastes a URL and asks for feedback on the site.
+description: "Use whenever the user pastes a URL or asks to audit, review, assess, redesign, rebuild, modernize or migrate an existing live website, asks \"what's wrong with this site\", or wants a website proposal, quote or scope for a client's site. Takes precedence over design-critique and accessibility-review for live public websites. For a security test of an app the user owns, use security-assessment instead. Produces an inventory, sitemap, multi-area audit, client audit report, redevelopment spec with content migration plan, and a 3-page-max proposal with timeline, budget and stack."
 ---
 
 # Website Audit & Rebuild
